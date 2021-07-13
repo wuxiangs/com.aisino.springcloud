@@ -23,6 +23,7 @@ public class ConfigController {
         System.out.println("李四");
         System.out.println("王五");
         System.out.println("赵六");
+        System.out.println("鬼脚七");
         return serverPort;
     }
 }
