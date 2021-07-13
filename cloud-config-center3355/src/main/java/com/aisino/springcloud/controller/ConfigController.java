@@ -19,6 +19,7 @@ public class ConfigController {
 
     @GetMapping(value="/config/getPort")
     public String getServerPort(){
+        System.out.println("呵呵");
         return serverPort;
     }
 }
