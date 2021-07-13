@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author wuxiang
- * @date 2021/7/13 9:27 上午
+ * @date 2021/7/13 8:02 下午
  */
 @RestController
 @RefreshScope
@@ -19,6 +19,7 @@ public class ConfigController {
     @Value("${server.port}")
     private String port;
 
+
     @GetMapping(value="/config/getPort")
     public String getServerPort(){
         System.out.println("张三");
@@ -26,6 +27,6 @@ public class ConfigController {
         System.out.println("王五");
         System.out.println("赵六");
         System.out.println("鬼脚七");
-        return serverPort+"---"+port;
+        return serverPort+"----"+port;
     }
 }
